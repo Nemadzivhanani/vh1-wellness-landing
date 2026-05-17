@@ -45,14 +45,10 @@
 
     <section class="relative min-h-[90vh] flex items-center justify-center px-4 pt-28 pb-12 bg-pattern overflow-hidden">
         
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[400px] z-0 pointer-events-none">
-            <div class="absolute top-0 -left-12 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob"></div>
-            <div class="absolute top-0 -right-12 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-2000"></div>
-            <div class="absolute -bottom-8 left-20 w-72 h-72 bg-brand-light rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-4000"></div>
-        </div>
+        <canvas id="particle-canvas" class="absolute top-0 left-0 w-full h-full z-0 opacity-70"></canvas>
 
         <div class="max-w-4xl mx-auto text-center z-10 scroll-element relative">
-            <span class="inline-block py-1.5 px-4 rounded-full bg-white/80 backdrop-blur-sm text-brand-dark text-xs md:text-sm font-bold tracking-wider mb-6 uppercase shadow-sm border border-green-100">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-white/90 backdrop-blur-md text-brand-dark text-xs md:text-sm font-bold tracking-wider mb-6 uppercase shadow-sm border border-green-100">
                 100% Organic & Affordable
             </span>
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight text-gray-900">
@@ -103,7 +99,7 @@
                 <div class="bg-white rounded-3xl p-6 border-2 border-brand-green shadow-xl scroll-element delay-200 relative md:-translate-y-4 flex flex-col">
                     <div class="absolute top-0 right-8 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-b-lg">GUT HEALTH</div>
                     <div class="w-full aspect-[4/3] rounded-2xl mb-6 mt-2 overflow-hidden border border-gray-100 bg-gray-50">
-                        <img src="images/colon-tea.png" alt="Colon Tea Flyer" class="w-full h-full object-cover">
+                        <img src="images/colon-tea.jpg" alt="Colon Tea Flyer" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl md:text-2xl font-bold mb-2">Colon Tea</h3>
                     <p class="text-gray-600 mb-6 text-sm flex-grow">Designed to aid gentle detox, support healthy digestion, significantly reduce bloating, boost energy, and support gut health.</p>

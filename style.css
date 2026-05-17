@@ -27,34 +27,3 @@
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
-
-/* =========================================
-   Hero Blob Animations
-   ========================================= */
-@keyframes blob {
-    0% { 
-        transform: translate(0px, 0px) scale(1); 
-    }
-    33% { 
-        transform: translate(150px, -150px) scale(1.2); 
-    }
-    66% { 
-        transform: translate(-150px, 100px) scale(0.8); 
-    }
-    100% { 
-        transform: translate(0px, 0px) scale(1); 
-    }
-}
-
-.animate-blob {
-    /* Added ease-in-out for a smoother, organic glide */
-    animation: blob 8s infinite ease-in-out;
-}
-
-.animation-delay-2000 {
-    animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-    animation-delay: 4s;
-}
