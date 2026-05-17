@@ -2,37 +2,50 @@
    Custom Styles for VH1 Wellness Landing
    ========================================= */
 
-/* Subtle dotted background pattern for the Hero section */
+/* Subtle dotted background pattern */
 .bg-pattern {
     background-color: #f9fafb;
     background-image: radial-gradient(#e5e7eb 1.5px, transparent 1.5px);
     background-size: 24px 24px;
 }
 
-/* Base state for all elements that will animate on scroll */
+/* Base state for scroll elements */
 .scroll-element {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    /* will-change helps the browser optimize the animation performance */
     will-change: opacity, transform; 
 }
 
-/* Active state applied by JavaScript when element enters the viewport */
+/* Active state for scroll elements */
 .scroll-element.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Staggered transition delays for grid items (e.g., product cards loading one after another) */
-.delay-100 { 
-    transition-delay: 100ms; 
+/* Staggered transition delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+/* =========================================
+   Hero Blob Animations
+   ========================================= */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
 }
 
-.delay-200 { 
-    transition-delay: 200ms; 
+.animate-blob {
+    animation: blob 7s infinite;
 }
 
-.delay-300 { 
-    transition-delay: 300ms; 
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
 }
